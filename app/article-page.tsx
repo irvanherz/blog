@@ -19,8 +19,8 @@ export function ArticlePage({ page }: ArticlePageProps) {
 				{/* Hero Section */}
         <section className="mb-12">
           <div className="mb-12">
-            <p className="text-sm font-mono text-foreground mb-3 tracking-wider">DEVELOPER & ENGINEER</p>
-            <h1 className="text-5xl md:text-4xl font-mono font-bold tracking-tighter mb-6 leading-tight text-foreground">
+            <p className="text-sm md:text-base font-mono text-foreground mb-3 tracking-wider">DEVELOPER & ENGINEER</p>
+            <h1 className="text-3xl md:text-4xl font-mono font-bold tracking-tighter mb-6 leading-tight text-foreground">
               I build systems for machines and write stories to understand humans.
             </h1>
             <p className="text-base md:text-lg text-muted-foreground font-mono leading-relaxed max-w-lg">
@@ -29,17 +29,17 @@ export function ArticlePage({ page }: ArticlePageProps) {
           </div>
 
           {/* Quick Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 py-8 border-y border-border">
+          <div className="grid grid-cols-3 gap-2 md:gap-8 py-8 border-y border-border">
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-mono font-bold text-foreground">{totalItems}</p>
+              <p className="text-xl md:text-3xl font-mono font-bold text-foreground">{totalItems}</p>
               <p className="text-xs md:text-sm font-mono text-muted-foreground mt-1">Articles</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-mono font-bold text-foreground">5+</p>
+              <p className="text-xl md:text-3xl font-mono font-bold text-foreground">5+</p>
               <p className="text-xs md:text-sm font-mono text-muted-foreground mt-1">Years Exp</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl md:text-3xl font-mono font-bold text-foreground">∞</p>
+              <p className="text-xl md:text-3xl font-mono font-bold text-foreground">∞</p>
               <p className="text-xs md:text-sm font-mono text-muted-foreground mt-1">Learning</p>
             </div>
           </div>

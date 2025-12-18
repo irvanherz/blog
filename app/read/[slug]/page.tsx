@@ -40,7 +40,7 @@ export default async function PostPage({ params }: PageProps) {
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
       <Navbar />
 
-      <main className="max-w-2xl mx-auto px-4 py-16 md:py-24">
+      <main className="max-w-2xl mx-auto px-4 py-12 md:py-16">
         {/* Back Button */}
         <Link
           href="/"

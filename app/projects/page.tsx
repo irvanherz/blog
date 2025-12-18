@@ -64,8 +64,8 @@ export default function ProjectsPage() {
 
       <main className="max-w-2xl mx-auto px-4 py-8 md:py-16">
         <section className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-mono font-bold tracking-tight mb-4 text-accent">Projects</h1>
-          <p className="text-lg text-muted-foreground font-mono">
+          <h1 className="text-3xl md:text-5xl font-mono font-bold tracking-tight mb-4 text-accent">Projects</h1>
+          <p className="text-base md:text-lg text-muted-foreground font-mono">
             A selection of projects I've built exploring different technologies and paradigms.
           </p>
         </section>
@@ -76,7 +76,7 @@ export default function ProjectsPage() {
               key={project.title}
               className="p-6 border border-border bg-secondary/30 hover:border-accent transition-colors"
             >
-              <h2 className="text-2xl font-mono font-bold mb-3">{project.title}</h2>
+              <h2 className="text-xl md:text-2xl font-mono font-bold mb-3">{project.title}</h2>
               <p className="text-muted-foreground font-mono mb-4 leading-relaxed text-sm">{project.description}</p>
 
               <div className="flex flex-wrap gap-2 mb-4">

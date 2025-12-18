@@ -13,7 +13,7 @@ export default function ContactPage() {
 
       <main className="max-w-2xl mx-auto px-4 py-8 md:py-16">
         <section className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-mono font-bold tracking-tight mb-4 text-accent">Contact</h1>
+          <h1 className="text-3xl md:text-5xl font-mono font-bold tracking-tight mb-4 text-accent">Contact</h1>
           <p className="text-lg text-muted-foreground font-mono">
             I'd love to hear from you. Reach out through any of the channels below.
           </p>

@@ -13,7 +13,7 @@ export default function AboutPage() {
 
       <main className="max-w-2xl mx-auto px-4 py-8 md:py-16">
         <section className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-mono font-bold tracking-tight mb-6 text-accent">About Me</h1>
+          <h1 className="text-3xl md:text-5xl font-mono font-bold tracking-tight mb-6 text-accent">About Me</h1>
 
           <div className="space-y-6 font-mono leading-relaxed text-muted-foreground">
             <p>
@@ -37,7 +37,7 @@ export default function AboutPage() {
         </section>
 
         <section className="mb-12 p-6 border border-border bg-secondary/30">
-          <h2 className="text-2xl font-mono font-bold mb-6 text-foreground">Skills & Expertise</h2>
+          <h2 className="text-xl md:text-2xl font-mono font-bold mb-6 text-foreground">Skills & Expertise</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
@@ -63,8 +63,8 @@ export default function AboutPage() {
         </section>
 
         <section className="border-t border-border pt-12">
-          <h2 className="text-xl font-mono font-bold mb-6 text-foreground">Get in Touch</h2>
-          <p className="text-muted-foreground font-mono mb-8">Feel free to reach out through any of these channels:</p>
+          <h2 className="text-lg md:text-xl font-mono font-bold mb-6 text-foreground">Get in Touch</h2>
+          <p className="text-sm md:text-base text-muted-foreground font-mono mb-8">Feel free to reach out through any of these channels:</p>
           <SocialLinks />
         </section>
       </main>
