@@ -3,11 +3,24 @@ import { Navbar } from "@/components/navbar"
 import { notFound } from "next/navigation"
 import ReactMarkdown from "react-markdown"
 import { getPostDetail, getPostList } from "@/lib/posts"
+import { Metadata } from "next"
+import { DEFAULT_METADATA } from "@/config"
 
 interface PageProps {
   params: Promise<{
     slug: string
   }>
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+   const { slug } = await params
+  const post = await getPostDetail(slug) // build-time fetch
+
+  return {
+    ...DEFAULT_METADATA,
+    title: post?.title ? `${post.title} | ${DEFAULT_METADATA.title}` : DEFAULT_METADATA.title,
+    description: post?.excerpt || DEFAULT_METADATA.description,
+  }
 }
 
 export function generateStaticParams() {

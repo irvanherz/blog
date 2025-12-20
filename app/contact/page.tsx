@@ -1,8 +1,9 @@
 import { Navbar } from "@/components/navbar"
-import { MY_EMAIL, MY_GITHUB, MY_LINKEDIN, MY_X } from "@/config"
+import { DEFAULT_METADATA, MY_EMAIL, MY_GITHUB, MY_LINKEDIN, MY_X } from "@/config"
 
 export const metadata = {
-  title: "Contact - blog.ivn.my.id",
+  ...DEFAULT_METADATA,
+  title: `Contact | ${DEFAULT_METADATA.title}`,
   description: "Get in touch with me",
 }
 

@@ -1,9 +1,11 @@
 import { Navbar } from "@/components/navbar"
 import { SocialLinks } from "@/components/social-links"
+import { DEFAULT_METADATA } from "@/config"
+import { title } from "process"
 
 export const metadata = {
-  title: "About - blog.ivn.my.id",
-  description: "Learn more about the developer behind this blog",
+  ...DEFAULT_METADATA,
+  title: `About | ${DEFAULT_METADATA.title}`
 }
 
 export default function AboutPage() {

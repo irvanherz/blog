@@ -4,6 +4,11 @@ import Link from "next/link"
 export const metadata = {
   title: "Projects - blog.ivn.my.id",
   description: "Featured projects and work showcasing software development",
+  other: {
+    "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+    Pragma: "no-cache",
+    Expires: "0",
+  },
 }
 
 export interface Project {

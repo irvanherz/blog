@@ -1,15 +1,23 @@
-import { Navbar } from "@/components/navbar"
-import { PostCard } from "@/components/post-card"
-import { SocialLinks } from "@/components/social-links"
-import { getPosts, getTotalPages } from "@/lib/posts"
-import Link from "next/link"
+import { getTotalPages } from "@/lib/posts"
 import { ArticlePage } from "../../article-page"
+import { Metadata } from "next"
+import { DEFAULT_METADATA } from "@/config"
 
 interface PageProps {
 	params: Promise<{
 		page: number
 	}>
 }
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+   const { page } = await params
+   
+  return {
+    ...DEFAULT_METADATA,
+    title: `Page ${page} | ${DEFAULT_METADATA.title}`,
+  }
+}
+
 
 // app/page/[page]/page.tsx
 export async function generateStaticParams() {
