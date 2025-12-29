@@ -1,5 +1,24 @@
 [
   {
+    "slug": "not-because-were-weak-but-because-we-push-too-hard",
+    "date": "2025-12-29T00:57:56.559Z"
+  },
+  {
+    "slug": "when-onmodelcreating-starts-to-feel-heavy",
+    "title": "When OnModelCreating Starts to Feel Heavy",
+    "excerpt": "A personal reflection on how a growing EF Core project turned OnModelCreating into a source of friction—and the simple pattern that made it feel light again.",
+    "date": "2025-12-27T00:00:00.000Z",
+    "tags": [
+      "efcore",
+      "dotnet",
+      "codefirst",
+      "database",
+      "refactoring"
+    ],
+    "category": "story",
+    "published": true
+  },
+  {
     "slug": "questioning-god-through-creation",
     "title": "Questioning God Through Creation",
     "excerpt": "From human inventions to the limits of existence, a personal reflection on how doubt became a path toward God.",
